@@ -5,12 +5,13 @@
 
 #include "Computer.h"
 #include "Human.h"
+#include "Player.h"
 
 
 class Referee {
 public:
     Referee();
-    char refGame(Human p1, Computer p2);
+    char refGame(Player * p1, Player * p2);
 };
 
 

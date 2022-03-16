@@ -1,4 +1,5 @@
 #include "Referee.h"
+#include "Player.h"
 
 
 
@@ -6,9 +7,9 @@ Referee::Referee() {
 
 }
 
-char Referee::refGame(Human p1, Computer p2){
-    char p1Choice = p1.makeMove();
-    char p2Choice = p2.makeMove();
+char Referee::refGame(Player * p1, Player * p2){
+    char p1Choice = p1->makeMove();
+    char p2Choice = p2->makeMove();
 
     // check who wins and return the winner
     if ((p1Choice == 'R' && p2Choice == 'S') || 

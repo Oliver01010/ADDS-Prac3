@@ -3,7 +3,6 @@
 
 #include "Computer.h"
 
-
 class FistfullODollars : public Computer {
 public:
     FistfullODollars();
