@@ -5,7 +5,9 @@
 class Player {
 public:
 
-    Player();
+    Player() {
+        
+    }
 
     virtual char makeMove() = 0;
 
