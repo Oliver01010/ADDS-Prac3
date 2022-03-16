@@ -2,6 +2,9 @@
 #include "Human.h"
 #include "Referee.h"
 
+#include "RandomComputer.h"
+
+
 #include <iostream>
 using namespace std;
 
@@ -11,9 +14,11 @@ int main() {
     Computer bot = Computer();
     Referee ref = Referee();
 
-    // play the game
-    char result = ref.refGame(player, bot);
-    cout << result << endl;
+    RandomComputer randComp = RandomComputer();
+    cout << randComp.makeMove() << endl;
+
+
+
 
     return 0;
 }
